@@ -1,0 +1,111 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2022-10-09T14:12:15Z",
+    "creators" : [ "Tool: spdx-maven-plugin" ],
+    "licenseListVersion" : "3.18"
+  },
+  "name" : "jib-sbom-demo",
+  "dataLicense" : "CC0-1.0",
+  "documentDescribes" : [ "SPDXRef-gnrtd2" ],
+  "documentNamespace" : "http://spdx.org/spdxpackages/com.example_jib-sbom-demo-0.0.1-SNAPSHOT",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-gnrtd0",
+    "comment" : "This package was created for a Maven dependency.  No SPDX or license information could be found in the Maven POM file.",
+    "copyrightText" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "spring-boot-starter-web",
+    "versionInfo" : "2.7.4"
+  }, {
+    "SPDXID" : "SPDXRef-gnrtd1",
+    "comment" : "This package was created for a Maven dependency.  No SPDX or license information could be found in the Maven POM file.",
+    "copyrightText" : "NOASSERTION",
+    "filesAnalyzed" : false,
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "name" : "spring-boot-starter-test",
+    "versionInfo" : "2.7.4"
+  }, {
+    "SPDXID" : "SPDXRef-gnrtd2",
+    "copyrightText" : "NOASSERTION",
+    "description" : "jib-sbom-demo",
+    "downloadLocation" : "NOASSERTION",
+    "filesAnalyzed" : true,
+    "homepage" : "https://spring.io/projects/spring-boot/jib-sbom-demo",
+    "licenseConcluded" : "NOASSERTION",
+    "licenseDeclared" : "NOASSERTION",
+    "licenseInfoFromFiles" : [ "NOASSERTION" ],
+    "name" : "jib-sbom-demo",
+    "packageFileName" : "NOASSERTION",
+    "packageVerificationCode" : {
+      "packageVerificationCodeValue" : "7aea7c5eeaf8e63c3eadcd2ac31af96aaf85f948"
+    },
+    "primaryPackagePurpose" : "LIBRARY",
+    "hasFiles" : [ "SPDXRef-gnrtd3", "SPDXRef-gnrtd3", "SPDXRef-gnrtd5", "SPDXRef-gnrtd3", "SPDXRef-gnrtd5", "SPDXRef-gnrtd4", "SPDXRef-gnrtd3", "SPDXRef-gnrtd5", "SPDXRef-gnrtd4", "SPDXRef-gnrtd3", "SPDXRef-gnrtd5", "SPDXRef-gnrtd4" ],
+    "summary" : "jib-sbom-demo",
+    "versionInfo" : "0.0.1-SNAPSHOT"
+  } ],
+  "files" : [ {
+    "SPDXID" : "SPDXRef-gnrtd3",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "b89961942305e385a0e2b00df2cee61f87e909cd"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/java/com/example/jibsbomdemo/JibSbomDemoApplication.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-gnrtd4",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "7db28ccd81f26001c0d256250e4138468d450b35"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/test/java/com/example/jibsbomdemo/JibSbomDemoApplicationTests.java",
+    "fileTypes" : [ "SOURCE" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  }, {
+    "SPDXID" : "SPDXRef-gnrtd5",
+    "checksums" : [ {
+      "algorithm" : "SHA1",
+      "checksumValue" : "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    } ],
+    "copyrightText" : "NOASSERTION",
+    "fileName" : "./src/main/resources/application.properties",
+    "fileTypes" : [ "OTHER" ],
+    "licenseConcluded" : "NOASSERTION",
+    "licenseInfoInFiles" : [ "NOASSERTION" ]
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-gnrtd2",
+    "relationshipType" : "DYNAMIC_LINK",
+    "relatedSpdxElement" : "SPDXRef-gnrtd0",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-gnrtd2",
+    "relationshipType" : "TEST_CASE_OF",
+    "relatedSpdxElement" : "SPDXRef-gnrtd1",
+    "comment" : "Relationship based on Maven POM file dependency information"
+  }, {
+    "spdxElementId" : "SPDXRef-gnrtd3",
+    "relationshipType" : "GENERATES",
+    "relatedSpdxElement" : "SPDXRef-gnrtd2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-gnrtd4",
+    "relationshipType" : "TEST_CASE_OF",
+    "relatedSpdxElement" : "SPDXRef-gnrtd2",
+    "comment" : ""
+  }, {
+    "spdxElementId" : "SPDXRef-gnrtd5",
+    "relationshipType" : "CONTAINED_BY",
+    "relatedSpdxElement" : "SPDXRef-gnrtd2",
+    "comment" : ""
+  } ]
+}
